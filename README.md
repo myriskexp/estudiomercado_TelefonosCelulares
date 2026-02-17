@@ -32,18 +32,6 @@ This repository was developed by **MyRiskExp** to translate market research into
 
 ---
 
-## Local development
-
-```bash
-git clone https://github.com/myriskexp/estudiomercado_TelefonosCelulares.git
-cd estudiomercado_TelefonosCelulares
-npm install
-npm run dev
-npm run build
-```
-
----
-
 ## Credits
 Developed by **MyRiskExp** — Risk Analysis & Strategic Intelligence  
 GitHub: https://github.com/myriskexp
@@ -83,18 +71,6 @@ Este repositorio fue desarrollado por **MyRiskExp** para convertir investigació
 ## Stack tecnológico
 - **React (JSX)** + **Vite**
 - Opcional (según versión del proyecto): **Recharts** y **Tailwind CSS**
-
----
-
-## Desarrollo local
-
-```bash
-git clone https://github.com/myriskexp/estudiomercado_TelefonosCelulares.git
-cd estudiomercado_TelefonosCelulares
-npm install
-npm run dev
-npm run build
-```
 
 ---
 
