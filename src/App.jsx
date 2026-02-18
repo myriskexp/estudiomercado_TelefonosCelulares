@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ScatterChart, Scatter, CartesianGrid, ZAxis } from "recharts";
+import myriskexpLogo from "./assets/myriskexp-logo.png"
 
 const COLORS = ["#1e3a5f","#2563eb","#0891b2","#059669","#d97706","#dc2626","#7c3aed","#db2777","#64748b","#0d9488"];
 
@@ -89,7 +90,21 @@ export default function MarketStudy() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen flex flex-col bg-white font-sans">
+      <a
+  href="https://github.com/myriskexp"
+  target="_blank"
+  rel="noreferrer"
+  className="fixed top-1 right-4 z-50"
+  title="MyRiskExp"
+>
+  <img
+    src={myriskexpLogo}
+    alt="MyRiskExp"
+    className="h-12 w-12 md:h-14 md:w-14 drop-shadow"
+  />
+</a>
+<div className="flex-1">
       {/* Header */}
       <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-blue-900 text-white px-6 py-8">
         <div className="max-w-5xl mx-auto">
@@ -515,7 +530,6 @@ export default function MarketStudy() {
             <strong>Síntesis:</strong> El camino más eficiente para ZTE en Colombia es una estrategia de "land and expand" — entrar vía operadores (canal donde ya tiene relaciones) con dispositivos accesibles, construir credibilidad con posventa local, y luego expandir hacia nichos de alto valor (gaming, plegables, IA). El objetivo realista a 3 años es capturar 3-5% de cuota de envíos en Colombia, equivalente a ~$100-180M en revenue anual.
           </Callout>
         </Section>
-
         {/* FUENTES */}
         <div className="mt-10 pt-6 border-t border-slate-200">
           <h3 className="text-sm font-bold text-slate-600 mb-3">Fuentes y metodología</h3>
@@ -532,7 +546,28 @@ export default function MarketStudy() {
             <p>• <strong>Nota:</strong> Los datos de cuota de mercado por envíos (Counterpoint) y por uso web (StatCounter) miden cosas diferentes y pueden divergir significativamente. El análisis triangula ambas fuentes. Las estimaciones de TAM/SAM/SOM para ZTE Colombia son proyecciones propias basadas en benchmarks de marcas entrantes similares (Transsion, Honor).</p>
           </div>
         </div>
+
+      </div> 
+    </div> 
+
+    {/* Footer */}
+    <footer className="border-t border-slate-200">
+      <div className="max-w-5xl mx-auto px-6 py-6 text-xs text-slate-500 space-y-1">
+        <div>Developed by MyRiskExp — Risk Analysis &amp; Strategic Intelligence</div>
+        <div>
+          GitHub:{" "}
+          <a
+            className="underline"
+            href="https://github.com/myriskexp"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://github.com/myriskexp
+          </a>
+        </div>
+        <div>© 2026 MyRiskExp. All rights reserved.</div>
       </div>
-    </div>
-  );
+    </footer>
+  </div>
+);
 }
